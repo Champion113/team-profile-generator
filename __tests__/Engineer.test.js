@@ -1,1 +1,2 @@
-const Engineer = require('../lib/Engineer');
+const Engineer = require('../lib/Engineer.js');
+test ('create github username')
