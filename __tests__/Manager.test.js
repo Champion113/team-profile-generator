@@ -1,19 +1,20 @@
-const Player = require('../lib/Manager');
-//create school test
-test('can set school via constructor', () => {
-    const test = "username";
-    const employee = new Engineer('Paris', 1, 'test@test.com', githubUser);
-    expect(emp.github).toBe(githubUser);
+const Manager = require('../lib/Manager');
+const Employee = require('../lib/Employee')
+//create office number
+test('can set office number via constructor', () => {
+    const offNum = "100";
+    const emp = new Manager('Paris', 1, 'test@test.com', offNum);
+    expect(emp.officeNumber).toBe(offNum);
 });
-//get github username via getGithub test
-test('can get github username via getGithub', () => {
-    const githubUser = "username";
-    const employee = new Engineer('Paris', 1, 'test@test.com', githubUser);
-    expect(emp.getGithub()).toBe(githubUser);
+//get officer number via getOfficeNumber test
+test('can get office number via getOfficeNumber', () => {
+    const offNum = "100";
+    const emp = new Manager('Paris', 1, 'test@test.com', offNum);
+    expect(emp.getOfficeNumber()).toBe(offNum);
 });
-//getRole return engineer
-test('can getRole return Engineer', () => {
-    const testRole = 'Engineer';
-    const emp = new Engineer('Paris', 1, 'test@test.com', 'username');
+//getRole return manager
+test('can getRole return manager', () => {
+    const testRole = "manager";
+    const emp = new Manager('Paris', 1, 'test@test.com', 100);
     expect(emp.getRole()).toBe(testRole);
 });

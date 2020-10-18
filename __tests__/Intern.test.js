@@ -1,19 +1,20 @@
-const Player = require('../lib/Intern');
-//create github username test
-test('create github username', () => {
-    const githubUser = "username";
-    const employee = new Engineer('Paris', 1, 'test@test.com', githubUser);
-    expect(emp.github).toBe(githubUser);
+const Intern = require('../lib/Intern');
+
+//create school
+test('create school', () => {
+    const testSchool = "Penn";
+    const emp = new Intern('Paris', 1, 'test@test.com', testSchool);
+    expect(emp.school).toBe(testSchool);
 });
-//get github username via getGithub test
-test('can get github username via getGithub', () => {
-    const githubUser = "username";
-    const employee = new Engineer('Paris', 1, 'test@test.com', githubUser);
-    expect(emp.getGithub()).toBe(githubUser);
+//get school via getSchool test
+test('can get school via getSchool', () => {
+    const testSchool = "Penn";
+    const emp = new Intern('Paris', 1, 'test@test.com', testSchool);
+    expect(emp.getSchool()).toBe(testSchool);
 });
-//getRole return engineer
-test('can getRole return Engineer', () => {
-    const testRole = 'Engineer';
-    const emp = new Engineer('Paris', 1, 'test@test.com', 'username');
-    expect(emp.getRole()).toBe(testRole);
+//getRole return Intern
+test('getRole return school', () => {
+    const testSchool = "Intern";
+    const emp = new Intern('Paris', 1, 'test@test.com', "Penn");
+    expect(emp.getSchool()).toBe(testSchool);
 });
