@@ -1,11 +1,10 @@
 {
   "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "team-profile-generator",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
-    "test": "tests"
+    "lib": "lib"
   },
   "scripts": {
     "test": "jest"
@@ -23,5 +22,6 @@
   "dependencies": {
     "inquirer": "^7.3.3",
     "jest": "^26.5.3"
-  }
+  },
+  "devDependencies": {}
 }
