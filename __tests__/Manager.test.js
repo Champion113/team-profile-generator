@@ -5,6 +5,7 @@ test('can set office number via constructor', () => {
     const offNum = 100;
     const emp = new Manager('Paris', 1, 'test@test.com', offNum);
     expect(emp.officeNumber).toBe(offNum);
+    
     test("Can get office number via getOffice()", () => {
         const testValue = 100;
         const e = new Manager("Foo", 1, "test@test.com", testValue);
