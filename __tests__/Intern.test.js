@@ -15,6 +15,6 @@ test('can get school via getSchool', () => {
 //getRole return Intern
 test('getRole return school', () => {
     const testSchool = "Intern";
-    const emp = new Intern('Paris', 1, 'test@test.com', "Penn");
+    const emp = new Intern('Paris', 1, 'test@test.com', "Intern");
     expect(emp.getSchool()).toBe(testSchool);
 });

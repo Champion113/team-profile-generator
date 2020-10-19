@@ -5,10 +5,8 @@ const Intern = require('./lib/Intern');
 //  inquirer dependency install
 const { prompt } = require('inquirer');
 const path = require('path')
-
-const outputPath = path.join(OUTPUT_DIR, "team.html")
 const OUTPUT_DIR = path.resolve(__dirname, "output")
-
+const outputPath = path.join(OUTPUT_DIR, "team.html")
 
 const team = [];
 

@@ -1,23 +1,23 @@
 const { TestScheduler } = require('jest');
-const Employee = require('../lib/Employee.js');
+const Employee = require('../lib/Employee');
 
 //set name test
 test('can set name', () => {
-    const testName = 'Paris';
-    const emp = new Employee(testName)
-    expect(emp.getName).toBe(testName);
+    const emp = 'Paris';
+    // const emp = new Employee(testName)
+    expect(emp.name).toEqual(expect.any(string));
 })
 //set email
 test('can set email', () => {
-    const testEmail = 'test@test.com';
-    const emp = new Employee('email', 1, testEmail);
-    expect(emp.email).toBe(testEmail);
+    // const testEmail = 'test@test.com';
+    const emp = new Employee('email', 1, "test@test.com");
+    expect(emp.email).toBe("test@test.com");
 })
 //set id
 test('can set id', () => {
-    const testId = '1';
-    const emp = new Employee('id', testId);
-    expect(emp.id).toBe(testId);
+    // const testId = '1';
+    const emp = new Employee('id', 1);
+    expect(emp.id).toBe(1);
 })
 
 //get name test
